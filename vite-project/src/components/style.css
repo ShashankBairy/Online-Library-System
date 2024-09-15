@@ -1,0 +1,270 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #242124;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: aliceblue;
+}
+
+.container {
+    background-color: #100C08;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1:hover {
+    color: #E50914;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li {
+    color: aliceblue;
+    list-style-type: none;
+    text-decoration: none;
+    padding: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h2 {
+    margin-bottom: 18px;
+}
+
+.bookdetail-content h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #555;
+    padding-bottom: 5px;
+}
+
+.welcomecontent {
+    padding: 20px;
+}
+
+.welcomecontent h2 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.welcomecontent p {
+    font-size: 1.2em;
+}
+
+.books {
+    padding: 20px;
+}
+
+.books h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+/* Category Sidebar */
+.category-sidebar {
+    padding: 20px;
+}
+
+.category-sidebar h3 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #ff6347;
+}
+
+.category-sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    
+}
+
+.category-sidebar ul li {
+    margin-bottom: 15px;
+    
+}
+
+.category-sidebar ul li a {
+    color: #ff6347;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.category-sidebar ul li a:hover {
+
+    color:aliceblue;
+}
+
+
+/* Popular Books Grid */
+.books-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.bookcard {
+    background-color: #333;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.bookcard:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px aliceblue;
+}
+
+.bookcard img {
+    max-width: 100%;
+    border-bottom: 2px solid #555;
+    padding-bottom: 10px;
+}
+
+.bookcard h4 {
+    font-size: 1.2em;
+    margin: 10px 0 5px;
+}
+
+.bookcard p {
+    font-size: 1em;
+    margin: 0;
+    color: #aaa;
+}
+
+.view-more-link {
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    color: #ff6347;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.view-more-link:hover {
+    text-decoration: underline;
+}
+
+.bookdetail-content{
+    margin: 10px;
+}
+
+.searchcontent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.searchcontent input{
+    width:400px;
+    margin-right: 20px;
+}
+
+.searchcontent button{
+    padding: 10px 20px;
+    background-color:#ff6347;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.searchcontent button:hover{
+    color: #E50914;
+    background-color: aliceblue;
+}
+
+.category-section h3{
+    margin:10px;
+    border-bottom: 2px solid #555;
+}
+
+.browse-button button{
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color:#ff6347;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.browse-button button:hover{
+    color: #E50914;
+    background-color:aliceblue;
+}
+
+.bookimg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bookdetails h2{
+    color: #E50914;
+    text-align: center;
+}
+
+.booksbutton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+
+.addbookcontent{
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.add-book{
+    background-color: aliceblue;
+    color: #100C08;
+    width:400px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+.counter button{
+    padding: 10px 20px;
+    background-color:#ff6347;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.add-button button{
+    padding: 10px 20px;
+    background-color:#ff6347;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.counter button:hover{
+    color: #E50914;
+    background-color: aliceblue;
+    box-shadow: 0 4px 8px #100C08;
+}
+.add-button button:hover{
+    color:#E50914;
+    background-color:aliceblue;
+    box-shadow: 0 4px 8px #100C08;
+}
