@@ -1,7 +1,7 @@
 Instructions to run this code:
 
 Install Visual Studio
-Create a new folder and name it as "To-do App"
+Create a new folder and name it as "Online-Library System"
 Open the new terminal which will be top left, beside Run option
 After the new terminal opens, install the vite by running this code " npm create vite@latest" This will create a folder named vite-project (generally Vite is a blunder where we can use React.js)
 After installing the vite-project, enter this line to change directory to vite-project " cd vite-project"
